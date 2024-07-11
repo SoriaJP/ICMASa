@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "objetivo": "Nuclear y apoyar a un importante grupo de docentes; profesionales e investigadores en áreas directamente vinculadas con la Ingeniería Civil."
+    },
+    {
+        "id": 2,
+        "objetivo": "Desarrollar investigaciones científicas, tanto básicas como aplicadas, individuales o disciplinarias."
+    },
+    {
+        "id":3,
+        "objetivo": "Apoyar el desarrollo y equipamiento en materiales, estructuras, y software para Ingeniería Civil."
+    },
+    {
+        "id":4,
+        "objetivo": "Realizar proyectos de investigación y desarrollo según prioridades regionales y provinciales."
+    },
+    {
+        "id":5,
+        "objetivo": "Colaborar con la Facultad, institutos, empresas y entidades en temas especializados mediante convenios y vinculaciones."
+    },
+    {
+        "id":6,
+        "objetivo": "Promover y dictar cursos de postgrado y de formación superior para doctorandos y docentes universitarios."
+    }
+]

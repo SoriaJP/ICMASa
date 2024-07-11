@@ -1,0 +1,29 @@
+{
+    "presidente":"Dr. Sergio H. Oller",
+    "vicepresidente":"Dra. Lía Orosco",
+    "secretario":"Mag. Mario Toledo",
+    "consejogob":{
+        "miembrostitulares":{
+            "miembro1":"Dr. Sergio H. Oller",
+            "miembro2":"Dr. Facundo Bellomo",
+            "miembro3":"Dr. Sergio Oller Aramayo",
+            "miembro4":"Mag. Mario Toledo"
+        },
+        "miembrossuplentes":{
+            "miembro1":"Dra. Lía Orosco",
+            "miembro2":"Dr. Ricardo Quinteros",
+            "miembro3":"Mag. Paul Kohan",
+            "miembro4":"Mag. Felipe Biella"
+        },
+        "representantes":{
+            "auxiliares":{
+                "titular":"Ing. Ezequiel Sánchez",
+                "suplente":" Ing. Lucas Burgos"
+            },
+            "personaltecnico":{
+                "titular":"Ing. Fernando Cazón",
+                "suplente":"Sr. Oscar Recalde"
+            }
+        }
+    }
+}

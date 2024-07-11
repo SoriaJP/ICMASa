@@ -1,0 +1,59 @@
+@import 'bulma/css/bulma.css';
+
+.navbarIcmasa {
+  border: 1px;
+  border-radius: 8px;
+  margin-right: 2px;
+}
+
+.title-color{
+  color: hsl(0, 0%, 21%) !important;
+}
+
+.title-color:hover{
+  color:hsl(0, 0%, 96%) !important;
+}
+
+.fixed-footer{ /*Footer.jsx ubica el footer en la parte inferior del navegador*/
+    
+    background-color: hsl(0, 00%, 15%)/*#303134 */!important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+    padding-bottom: 10px !important;
+}
+
+@media (max-width: 768px) {
+  .fixed-footer {
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+      padding-bottom: 10px !important; /* Si quieres mantener el padding-bottom igual */
+  }
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .enlaces-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .enlaces-container .columns {
+    justify-content: center;
+  }
+
+  .is-128x50 {
+    width: 128px;
+    height: 50px;
+  }
+  
+  .image.is-128x50 img {
+    max-width: 128px; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+

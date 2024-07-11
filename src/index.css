@@ -1,0 +1,59 @@
+@import 'bulma/css/bulma.css';
+
+body {
+    background-image: url('../src/assets/icmasa.jpg'); /*pone de fondo una imagen*/
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+    /*background-color: hsl(0, 0%, 96%);*/
+    color: hsl(0, 0%, 4%);
+    font-family: 'Monda', sans-serif !important
+}
+
+.pagina {
+    background-color: hsl(0, 0%, 96%);
+    color: hsl(0, 0%, 4%);
+    font-family: 'Monda', sans-serif !important;
+    
+}
+
+.container-icmasa {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 48px;
+    margin-right: 48px;
+    padding-bottom: 48px;
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-image: url('../src/assets/icmasaII.png');
+        background-size:cover;
+        background-position: center top; /* Centra la imagen horizontalmente y la alinea al inicio verticalmente */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('../src/assets/icmasaII.png');
+        background-size: cover; /* Asegura que la imagen se contenga dentro del contenedor */
+        background-position: center top; /* Centra la imagen horizontalmente y la alinea al inicio verticalmente */
+    }
+
+    .container-icmasa {
+        margin-left: 24px;
+        margin-right: 24px;
+        padding-bottom: 48px;
+        color: hsl(0, 0%, 4%) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: url('../src/assets/icmasaII.png');
+        background-size: cover; /* Asegura que la imagen se contenga dentro del contenedor */
+        background-position: center top; /* Centra la imagen horizontalmente y la alinea al inicio verticalmente */
+    }
+}
+
