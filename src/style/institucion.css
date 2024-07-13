@@ -1,0 +1,10 @@
+.margen-top {
+    margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+    
+    .margen-top {
+        margin-top: 0px;
+    }
+}

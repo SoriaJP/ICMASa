@@ -45,6 +45,7 @@ body {
     .container-icmasa {
         margin-left: 24px;
         margin-right: 24px;
+        margin-bottom: 0px;
         padding-bottom: 48px;
         color: hsl(0, 0%, 4%) !important;
     }
