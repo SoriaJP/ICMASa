@@ -2,14 +2,6 @@ import React from "react";
 import '../../style/Inicio.css';
 import icmasa from "../../assets/icmasa.jpg";
 
-function Cuadrado(){
-    return(
-        <div>
-
-        </div>
-    );
-}
-
 export default function Inicio(){
     return(
         <div className="inicio-container">

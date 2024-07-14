@@ -2,6 +2,16 @@
     margin-top: 48px;
 }
 
+.cursor-pointer {
+    cursor: pointer; /* Cambia el cursor a un puntero */
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.modal-card-body {
+    text-align: justify;
+}
+
 @media (max-width: 768px) {
     
     .margen-top {
