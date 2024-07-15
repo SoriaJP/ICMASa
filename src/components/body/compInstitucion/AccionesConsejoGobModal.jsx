@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ReactMarkdown from 'react-markdown';
 import '../../../style/institucion.css';
 import '../../../style/Inicio.css';
 import data from '../../../assets/json/actividadesgobierno.json';
@@ -46,8 +47,8 @@ export default function AccionesConsejoGobModal() {
                         <header className="modal-card-head has-background-primary-20">
                             <p className="modal-card-title">{modalContent.titulo}</p>
                         </header>
-                        <section className="modal-card-body has-background-light has-text-dark">
-                            <div dangerouslySetInnerHTML={{ __html: modalContent.contenido }} />
+                        <section className="modal-card-body has-background-light">
+                            <ReactMarkdown>{modalContent.contenido}</ReactMarkdown>
                         </section>
                         <footer className="modal-card-foot has-background-primary-20">
                             <button className="button is-info" onClick={handleModalClose}>Close</button>

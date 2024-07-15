@@ -8,6 +8,11 @@
     -webkit-user-select: none;
 }
 
+
+.modal-card-body strong{
+    color:black !important;
+}
+
 .modal-card-body {
     text-align: justify;
 }

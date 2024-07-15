@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ReactMarkdown from 'react-markdown';
 import '../../../style/institucion.css';
 import '../../../style/Inicio.css';
 import data from '../../../assets/json/actividadesgobierno.json';
@@ -33,7 +34,7 @@ export default function AccionesConsejoGobMobile() {
                         id={`content${item.id}`}
                         style={{ marginTop: "-25px", marginBottom: "30px", display: visibleContent === `content${item.id}` ? 'block' : 'none' }}
                     >
-                        {item.contenido}
+                        <ReactMarkdown>{item.contenido}</ReactMarkdown>
                     </div>
                 </div>
             ))}

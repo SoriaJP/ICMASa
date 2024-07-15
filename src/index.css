@@ -27,6 +27,7 @@ body {
     padding-bottom: 48px;
 }
 
+
 @media (max-width: 1200px) {
     body {
         background-image: url('../src/assets/icmasaII.png');
