@@ -21,7 +21,7 @@ export default function AccionesConsejoGobModal() {
     };
 
     return (
-        <div className="container-icmasa">
+        <div className="container-icmasa" id="section-actividades">
             <p className="title is-4 has-text-dark margen-top"><strong>Actividades del Consejo de Gobierno</strong></p>
             <p className="has-text-dark">Este Consejo de Gobierno se encargará, directamente o a través de subcomisiones operativas designadas, de ejercer las siguientes actividades durante la gestión.</p>
             <br />

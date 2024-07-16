@@ -1,17 +1,54 @@
 @import 'bulma/css/bulma.css';
 
+.navbar{ /*Color de fondo de la barra de bavegacion*/
+  background-color: hsl(0, 0%, 96%) !important;
+}
+
+.navbar-brand{/*Padding al logo o nombre de la institución en la barra de navegacion ubicada en el extremo izquierdo*/
+  padding-left: 36px;
+}
+
+
+.navbar-end{/*Padding al menie de la institución en la barra de navegacion ubicada en el extremo derecho*/
+  padding-right: 48px !important;
+}
+
+.navbar-item:hover{ /*Cambia el estilo al acentar el mouse por los item de la barra de navegacion*/
+  background-color: hsl(171, 100%, 29%) !important;
+  color:hsl(0, 0%, 96%) !important;
+  border: 1px;
+  border-radius: 8px;
+  margin-right: 2px;
+}
+
+.navbar-item:hover .title { /*Cambia el color del titulo al acentar el mouse por la barra de navegacion*/
+  color: hsl(0, 0%, 96%) !important;
+}
+
 .navbarIcmasa {
   border: 1px;
   border-radius: 8px;
   margin-right: 2px;
 }
 
-.title-color{
-  color: hsl(0, 0%, 21%) !important;
+.navbar-dropdown{
+  background-color: hsl(0, 0%, 96%) !important;
+  border: 1px solid hsl(171, 100%, 29%);
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgb(0, 0, 0);
 }
 
-.title-color:hover{
-  color:hsl(0, 0%, 96%) !important;
+.navbar-item-custom{
+  background-color: hsl(0, 0%, 96%) !important;
+  color: hsl(0, 00%, 15%) !important;
+}
+
+.navbar-dropdown {
+  display: none;
+}
+
+.navbar-dropdown.is-active {
+  display: block;
 }
 
 .fixed-footer{ /*Footer.jsx ubica el footer en la parte inferior del navegador*/
@@ -23,6 +60,10 @@
 }
 
 @media (max-width: 768px) {
+  .navbar-brand{
+    padding-left: 10px;
+  }
+  
   .fixed-footer {
       padding-left: 24px !important;
       padding-right: 24px !important;
