@@ -2,12 +2,14 @@ import React from "react";
 import { useState, useEffect, useContext } from "react";
 import { LoadJson } from "../../contexts/LoadJson";
 import '../../style/Inicio.css';
+import { useNavigate } from "react-router-dom";
 
 
 export default function Organizacion(){
 
     const [titleClass, setTitleClass] = useState("title is-4");
     const miembros = useContext(LoadJson);
+    const navigate = useNavigate();
 
     const handleResize = () => {
         if (window.innerWidth < 786) {
@@ -15,6 +17,10 @@ export default function Organizacion(){
         } else {
             setTitleClass("title is-4");
         }
+    };
+
+    const handleButtonClick = () => {
+        navigate("/institucion");
     };
 
     useEffect(() => {
@@ -25,12 +31,13 @@ export default function Organizacion(){
         };
     }, []);
 
+
     return(
         <div className="has-background-light">
             <div className="block block-objetivo">
                 <h2 className="title is-2 has-text-success"><strong>Organización</strong></h2>
                 <p className="title is-6 has-text-dark">ICMASa es dirigido por un Consejo de Gobierno, un Director y un Subdirector. </p>
-                <button className="button is-primary">
+                <button className="button is-primary" onClick={handleButtonClick}>
                     miembros
                 </button>
                 <br />
