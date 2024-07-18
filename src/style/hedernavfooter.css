@@ -1,5 +1,17 @@
 @import 'bulma/css/bulma.css';
 
+.item-active-custom{
+  background-color: hsl(171, 100%, 35%) !important;
+  color: hsl(0, 0%, 96%) !important;
+  border: 1px;
+  border-radius: 8px;
+  margin-right: 2px;
+}
+
+.pending{
+  background-color: brown;
+}
+
 .navbar{ /*Color de fondo de la barra de bavegacion*/
   background-color: hsl(0, 0%, 96%) !important;
 }
@@ -23,12 +35,6 @@
 
 .navbar-item:hover .title { /*Cambia el color del titulo al acentar el mouse por la barra de navegacion*/
   color: hsl(0, 0%, 96%) !important;
-}
-
-.navbarIcmasa {
-  border: 1px;
-  border-radius: 8px;
-  margin-right: 2px;
 }
 
 .navbar-dropdown{
