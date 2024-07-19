@@ -65,7 +65,7 @@ export default function NavBar() {
               </NavLink>
             </div>
           </div>
-          {/*<NavLink 
+          <NavLink 
             to="/about"
             end
             className={(isActive)=>[
@@ -74,7 +74,7 @@ export default function NavBar() {
             ].filter(Boolean).join(" ")}
           >
             <strong>Otro Link</strong>
-          </NavLink>*/}
+          </NavLink>
         </div>
       </div>
     </nav>
