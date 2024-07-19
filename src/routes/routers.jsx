@@ -18,6 +18,11 @@ const routers = createBrowserRouter([
             },
         ],
     },
-]);
+],
+{
+    basename: /icmasa/ ,
+}
+    
+);
 
 export default routers;
