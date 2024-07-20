@@ -57,6 +57,18 @@
   display: block;
 }
 
+.navbar-burger span{
+  background-color: hsl(171, 100%, 29%) !important;
+}
+
+.navbar-burger:hover{
+  background-color: hsl(171, 75%, 75%) !important;
+}
+
+.navbar-burger:hover span{
+  background-color: hsl(217, 71%, 53%) !important;
+}
+
 .fixed-footer{ /*Footer.jsx ubica el footer en la parte inferior del navegador*/
     
     background-color: hsl(0, 00%, 15%)/*#303134 */!important;

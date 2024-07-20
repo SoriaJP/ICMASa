@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../../style/hedernavfooter.css';
-import { NavLink } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 
 export default function NavBar() {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
   const [isSubmenuActive, setIsSubmenuActive] = useState(false);
+  const [isLinkActive, setIsLinkActive] = useState(false);
+  const location = useLocation();
 
 
   const toggleNavbar = () => {
@@ -14,6 +18,23 @@ export default function NavBar() {
   const toggleSubmenu = () => {
     setIsSubmenuActive(!isSubmenuActive);
   };
+
+  const isActive = (hash)=>{
+    if (location.hash === hash){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  useEffect(() => {
+    if (location.hash === '#section-organizacion' || location.hash === '#section-actividades') {
+      setIsLinkActive(true);
+    } else {
+      setIsLinkActive(false);
+    }
+  }, [location.hash]);
+
 
   return(
     <nav className="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
@@ -39,42 +60,36 @@ export default function NavBar() {
         <div className='navbar-end'>
           <div className={`navbar-item has-dropdown is-hoverable ${isSubmenuActive ? 'is-active': ''}`}>
             <a
-              className='navbar-item'
+              className={`navbar-item ${isLinkActive ? 'has-text-link':''}`}
               onClick={toggleSubmenu}
             > 
               <strong>Organización</strong>
             </a>
             <div className={`navbar-dropdown is-right ${isSubmenuActive ? 'is-active is-hoverable' : ''}`}>
-              <NavLink 
+              <HashLink
                 to="/institucion#section-organizacion"
-                className={(isActive)=>[
-                  "navbar-item navbar-item-custom",
-                  isActive.isActive ? "item-active-custom": "",
+                className={["navbar-item navbar-item-custom",
+                  isActive('#section-organizacion') ? "has-text-link":"",
                 ].filter(Boolean).join(" ")}
               >
                 <strong>Autoridades</strong>
-              </NavLink>
-              <NavLink 
-                to="/institucion#section-actividades"
-                className={(isActive)=>[
-                  "navbar-item navbar-item-custom",
-                  isActive.isActive ? "item-active-custom": "",
+              </HashLink>
+              <HashLink 
+                to="institucion#section-actividades"
+                className={["navbar-item navbar-item-custom",
+                  isActive('#section-actividades') ? "has-text-link":"",
                 ].filter(Boolean).join(" ")}
               >
                 <strong>Acciones a seguir</strong>
-              </NavLink>
+              </HashLink>
             </div>
           </div>
-          <NavLink 
+          <Link 
             to="/about"
-            end
-            className={(isActive)=>[
-              "navbar-item",
-              isActive.isActive ? "item-active-custom": "",
-            ].filter(Boolean).join(" ")}
+            className="navbar-item"
           >
             <strong>Otro Link</strong>
-          </NavLink>
+          </Link>
         </div>
       </div>
     </nav>
