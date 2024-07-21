@@ -1,9 +1,16 @@
 import React from "react";
 import objetivos from "../../../assets/json/resumenobjetivo.json";
 import '../../../style/Inicio.css';
+import { useNavigate } from "react-router-dom";
 
 
 export default function Objetivos(){
+
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate("/objetivos");
+    };
     
     // Función para dividir el array en bloques de tamaño especificado
     const chunkArray = (arr, size) => {
@@ -25,7 +32,7 @@ export default function Objetivos(){
             <div className="block block-objetivo">
                 <h2 className="title is-2 has-text-success"><strong>Objetivos</strong></h2>
                 <p className="title is-6 has-text-dark">Te invitamos a conocer nuestros objetivos.</p>
-                <button className="button is-primary">
+                <button className="button is-primary" onClick={handleButtonClick}>
                     saber +
                 </button>
                 <br />
