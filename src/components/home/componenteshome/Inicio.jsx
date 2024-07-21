@@ -1,6 +1,6 @@
 import React from "react";
-import '../../style/Inicio.css';
-import icmasa from "../../assets/icmasa.jpg";
+import '../../../style/Inicio.css';
+//import icmasa from "../../../assets/icmasa.jpg";
 
 export default function Inicio(){
     return(

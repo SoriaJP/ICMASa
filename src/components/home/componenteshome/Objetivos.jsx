@@ -1,6 +1,6 @@
 import React from "react";
-import objetivos from "../../assets/json/resumenobjetivo.json";
-import '../../style/Inicio.css';
+import objetivos from "../../../assets/json/resumenobjetivo.json";
+import '../../../style/Inicio.css';
 
 
 export default function Objetivos(){

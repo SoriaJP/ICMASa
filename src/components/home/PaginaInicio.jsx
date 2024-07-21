@@ -1,7 +1,7 @@
 import React from 'react';
-import Inicio from './body/Inicio';
-import Objetivos from './body/Objetivos';
-import Organizacion from './body/Organizacion';
+import Inicio from './componenteshome/Inicio.jsx';
+import Objetivos from './componenteshome/Objetivos.jsx';
+import Organizacion from './componenteshome/Organizacion.jsx';
 
 function PaginaInicio() {
   return (

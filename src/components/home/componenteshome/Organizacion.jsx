@@ -1,15 +1,13 @@
-import React from "react";
-import { useState, useEffect, useContext } from "react";
-import { LoadJson } from "../../contexts/LoadJson";
-import '../../style/Inicio.css';
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect, useContext } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { LoadJson } from "../../../contexts/LoadJson";
+import '../../../style/Inicio.css';
 
-
-export default function Organizacion(){
-
+export default function Organizacion() {
     const [titleClass, setTitleClass] = useState("title is-4");
     const miembros = useContext(LoadJson);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleResize = () => {
         if (window.innerWidth < 786) {
@@ -31,8 +29,11 @@ export default function Organizacion(){
         };
     }, []);
 
+    useEffect(() => {
+        window.scrollTo(0, 0); // Desplazar al inicio de la página cuando cambia la ruta
+    }, []);
 
-    return(
+    return (
         <div className="has-background-light">
             <div className="block block-objetivo">
                 <h2 className="title is-2 has-text-success"><strong>Organización</strong></h2>
@@ -46,20 +47,20 @@ export default function Organizacion(){
                     <div className="column">
                         <div className="content has-background-primary-20 block-objetivo-indvidual">
                             <div>
-                                <p className= {titleClass}>
+                                <p className={titleClass}>
                                     Director: {miembros["presidente"]}
                                 </p>
-                                <p className= {titleClass}>
+                                <p className={titleClass}>
                                     Subdirectora: {miembros["vicepresidente"]}
                                 </p>
                                 <p className="title is-6">
                                     <strong>Consejo de gobierno</strong>: 6 (seis) miembros, con sus respectivos suplentes.
-                                </p>         
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }

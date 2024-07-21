@@ -10,6 +10,12 @@ body {
     font-family: 'Monda', sans-serif !important
 }
 
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+
 .pagina {
     background-color: hsl(0, 0%, 96%);
     color: hsl(0, 0%, 4%);
@@ -26,7 +32,6 @@ body {
     margin-right: 48px;
     padding-bottom: 48px;
 }
-
 
 @media (max-width: 1200px) {
     body {

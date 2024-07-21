@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ReactMarkdown from 'react-markdown';
 import '../../../style/institucion.css';
 import '../../../style/Inicio.css';
@@ -9,6 +9,13 @@ export default function AccionesConsejoGobModal() {
     const [modalContent, setModalContent] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [isModalOpen]);
 
     const handleModalOpen = (item) => {
         setModalContent(item);

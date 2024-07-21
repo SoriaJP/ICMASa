@@ -1,11 +1,16 @@
 @import 'bulma/css/bulma.css';
 
+
 .item-active-custom{
   background-color: hsl(171, 100%, 35%) !important;
   color: hsl(0, 0%, 96%) !important;
   border: 1px;
   border-radius: 8px;
   margin-right: 2px;
+}
+
+.navbar-link {
+  color: #00d1b2;
 }
 
 .pending{
@@ -23,6 +28,10 @@
 
 .navbar-end{/*Padding al menie de la institución en la barra de navegacion ubicada en el extremo derecho*/
   padding-right: 48px !important;
+}
+
+.navbar-item{
+  color:hsl(0, 00%, 15%) !important;
 }
 
 .navbar-item:hover{ /*Cambia el estilo al acentar el mouse por los item de la barra de navegacion*/
