@@ -5,46 +5,29 @@ import { HashLink } from 'react-router-hash-link';
 
 export default function NavBar() {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
-  const [isSubmenuActive1, setIsSubmenuActive1] = useState(false);
-  const [isSubmenuActive2, setIsSubmenuActive2] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState(null);
   const location = useLocation();
 
   const toggleNavbar = () => {
     setIsNavbarActive(!isNavbarActive);
+    setActiveSubmenu(null);
   };
 
-  const toggleSubmenu1 = () => {
+  const toggleSubmenu = (submenu) => {
     if (isNavbarActive && window.innerWidth < 1224) {
-      setIsSubmenuActive1(!isSubmenuActive1);
-      setIsSubmenuActive2(false);
-    }else if(window.innerWidth >= 1224){
-      setIsSubmenuActive1(false);
+      setActiveSubmenu((prevSubmenu) => (prevSubmenu === submenu ? null : submenu));
+    } else if (window.innerWidth >= 1224) {
+      setActiveSubmenu(null);
     }
   };
 
-  const toggleSubmenu2 = () => {
-    if (isNavbarActive && window.innerWidth < 1224) {
-      setIsSubmenuActive2(!isSubmenuActive2);
-      setIsSubmenuActive1(false);
-    }else if(window.innerWidth >= 1224){
-      setIsSubmenuActive2(false);
-    }
-  };
-
-  const toggleOffSubMenu = () =>{
-    setIsSubmenuActive1(false);
-    setIsSubmenuActive2(false);
-  }
-
-  const isActive = (hash) => {
-    return location.hash === hash ? 'has-text-link' : '';
-  };
+  const isActive = (hash) => location.hash === hash ? 'has-text-link' : '';
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top on location change
   }, [location]);
 
-   return (
+  return (
     <nav className="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item has-background-light" href="/">
@@ -65,14 +48,14 @@ export default function NavBar() {
       </div>
       <div className={`navbar-menu ${isNavbarActive ? 'is-active' : ''}`} id="menu-principal">
         <div className="navbar-end">
-          <div className={`navbar-item has-dropdown is-hoverable ${isSubmenuActive1 ? 'is-active' : ''}`}>
+          <div className={`navbar-item has-dropdown is-hoverable ${activeSubmenu === 'organizacion' ? 'is-active' : ''}`}>
             <a
               className={`navbar-item navbar-item-custom ${isActive('#section-organizacion') || isActive('#section-actividades') ? 'has-text-link' : ''}`}
-              onClick={toggleSubmenu1}
+              onClick={() => toggleSubmenu('organizacion')}
             >
               <strong>Organización</strong>
             </a>
-            <div className={`navbar-dropdown is-right ${isSubmenuActive1 ? 'is-active' : ''}`}>
+            <div className={`navbar-dropdown is-right ${activeSubmenu === 'organizacion' ? 'is-active' : ''}`}>
               <HashLink
                 to="/institucion#section-organizacion"
                 className={`navbar-item navbar-item-custom ${isActive('#section-organizacion')}`}
@@ -90,19 +73,18 @@ export default function NavBar() {
           <Link
             to="/vision_mision"
             className={`navbar-item ${location.pathname === '/vision_mision' ? 'has-text-link' : ''}`}
-            onClick={toggleOffSubMenu}
+            onClick={() => setActiveSubmenu(null)}
           >
             <strong>Visión y Misiones</strong>
           </Link>
-          
-          <div className={`navbar-item has-dropdown is-hoverable ${isSubmenuActive2 ? 'is-active' : ''}`}>
+          <div className={`navbar-item has-dropdown is-hoverable ${activeSubmenu === 'objetivos' ? 'is-active' : ''}`}>
             <a
               className={`navbar-item navbar-item-custom ${isActive('#estrategicos') || isActive('#operativos') ? 'has-text-link' : ''}`}
-              onClick={toggleSubmenu2}
+              onClick={() => toggleSubmenu('objetivos')}
             >
               <strong>Objetivos</strong>
             </a>
-            <div className={`navbar-dropdown is-right ${isSubmenuActive2 ? 'is-active' : ''}`}>
+            <div className={`navbar-dropdown is-right ${activeSubmenu === 'objetivos' ? 'is-active' : ''}`}>
               <HashLink
                 to="/objetivos#estrategicos"
                 className={`navbar-item navbar-item-custom ${isActive('#estrategicos')}`}
