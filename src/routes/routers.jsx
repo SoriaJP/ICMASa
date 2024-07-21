@@ -4,6 +4,7 @@ import Layout from "./Layouts.jsx";
 import PaginaInicio from "../components/home/PaginaInicio.jsx";
 import PaginaInstitucion from "../components/Institucion/PaginaInstitucion.jsx";
 import PaginaObjetivos from "../components/objetivos/PaginaObjetivos.jsx";
+import PaginaVisionMision from "../components/visionmision/PaginaVisionMision.jsx";
 
 const routers = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const routers = createBrowserRouter([
             {
                 path: "institucion",
                 element: <PaginaInstitucion />,
+            },
+            {
+                path: "vision_mision",
+                element: <PaginaVisionMision />,
             },
             {
                 path: "objetivos",

@@ -5,20 +5,36 @@ import { HashLink } from 'react-router-hash-link';
 
 export default function NavBar() {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
-  const [isSubmenuActive, setIsSubmenuActive] = useState(false);
+  const [isSubmenuActive1, setIsSubmenuActive1] = useState(false);
+  const [isSubmenuActive2, setIsSubmenuActive2] = useState(false);
   const location = useLocation();
 
   const toggleNavbar = () => {
     setIsNavbarActive(!isNavbarActive);
   };
 
-  const toggleSubmenu = () => {
+  const toggleSubmenu1 = () => {
     if (isNavbarActive && window.innerWidth < 1224) {
-      setIsSubmenuActive(!isSubmenuActive);
+      setIsSubmenuActive1(!isSubmenuActive1);
+      setIsSubmenuActive2(false);
     }else if(window.innerWidth >= 1224){
-      setIsSubmenuActive(false);
+      setIsSubmenuActive1(false);
     }
   };
+
+  const toggleSubmenu2 = () => {
+    if (isNavbarActive && window.innerWidth < 1224) {
+      setIsSubmenuActive2(!isSubmenuActive2);
+      setIsSubmenuActive1(false);
+    }else if(window.innerWidth >= 1224){
+      setIsSubmenuActive2(false);
+    }
+  };
+
+  const toggleOffSubMenu = () =>{
+    setIsSubmenuActive1(false);
+    setIsSubmenuActive2(false);
+  }
 
   const isActive = (hash) => {
     return location.hash === hash ? 'has-text-link' : '';
@@ -49,14 +65,14 @@ export default function NavBar() {
       </div>
       <div className={`navbar-menu ${isNavbarActive ? 'is-active' : ''}`} id="menu-principal">
         <div className="navbar-end">
-          <div className={`navbar-item has-dropdown is-hoverable ${isSubmenuActive ? 'is-active' : ''}`}>
+          <div className={`navbar-item has-dropdown is-hoverable ${isSubmenuActive1 ? 'is-active' : ''}`}>
             <a
               className={`navbar-item navbar-item-custom ${isActive('#section-organizacion') || isActive('#section-actividades') ? 'has-text-link' : ''}`}
-              onClick={toggleSubmenu}
+              onClick={toggleSubmenu1}
             >
               <strong>Organización</strong>
             </a>
-            <div className={`navbar-dropdown is-right ${isSubmenuActive ? 'is-active' : ''}`}>
+            <div className={`navbar-dropdown is-right ${isSubmenuActive1 ? 'is-active' : ''}`}>
               <HashLink
                 to="/institucion#section-organizacion"
                 className={`navbar-item navbar-item-custom ${isActive('#section-organizacion')}`}
@@ -67,16 +83,46 @@ export default function NavBar() {
                 to="/institucion#section-actividades"
                 className={`navbar-item navbar-item-custom ${isActive('#section-actividades')}`}
               >
-                <strong>Acciones a seguir</strong>
+                <strong>Actividades a seguir</strong>
               </HashLink>
             </div>
           </div>
           <Link
-            to="/objetivos"
-            className={`navbar-item ${location.pathname === '/objetivos' ? 'has-text-link' : ''}`}
+            to="/vision_mision"
+            className={`navbar-item ${location.pathname === '/vision_mision' ? 'has-text-link' : ''}`}
+            onClick={toggleOffSubMenu}
           >
-            <strong>Objetivos</strong>
+            <strong>Visión y Misiones</strong>
           </Link>
+          
+          <div className={`navbar-item has-dropdown is-hoverable ${isSubmenuActive2 ? 'is-active' : ''}`}>
+            <a
+              className={`navbar-item navbar-item-custom ${isActive('#estrategicos') || isActive('#operativos') ? 'has-text-link' : ''}`}
+              onClick={toggleSubmenu2}
+            >
+              <strong>Objetivos</strong>
+            </a>
+            <div className={`navbar-dropdown is-right ${isSubmenuActive2 ? 'is-active' : ''}`}>
+              <HashLink
+                to="/objetivos#estrategicos"
+                className={`navbar-item navbar-item-custom ${isActive('#estrategicos')}`}
+              >
+                <strong>Objetivos estratégicos</strong>
+              </HashLink>
+              <HashLink
+                to="/objetivos#operativos"
+                className={`navbar-item navbar-item-custom ${isActive('#operativos')}`}
+              >
+                <strong>Objetivos operativos</strong>
+              </HashLink>
+              <HashLink
+                to="/objetivos#acciones"
+                className={`navbar-item navbar-item-custom ${isActive('#acciones')}`}
+              >
+                <strong>Acciones</strong>
+              </HashLink>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
