@@ -12,6 +12,7 @@
   "dependencies": {
     "@eslint/config-array": "^0.17.0",
     "@eslint/object-schema": "^2.1.4",
+    "@fortawesome/fontawesome-free": "^6.6.0",
     "bulma": "^1.0.1",
     "glob": "^10.4.2",
     "lru-cache": "^10.3.0",

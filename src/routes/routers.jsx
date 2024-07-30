@@ -5,6 +5,7 @@ import PaginaInicio from "../components/home/PaginaInicio.jsx";
 import PaginaInstitucion from "../components/Institucion/PaginaInstitucion.jsx";
 import PaginaObjetivos from "../components/objetivos/PaginaObjetivos.jsx";
 import PaginaVisionMision from "../components/visionmision/PaginaVisionMision.jsx";
+import PaginaPublicaciones from "../components/publicaciones/PaginaPublicaciones.jsx";
 
 const routers = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const routers = createBrowserRouter([
             {
                 path: "objetivos",
                 element: <PaginaObjetivos />,
+            },
+            {
+                path: "publicaciones",
+                element: <PaginaPublicaciones />
             },
         ],
     },
