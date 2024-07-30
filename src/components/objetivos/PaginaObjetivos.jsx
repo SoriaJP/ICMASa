@@ -11,9 +11,9 @@ export default function PaginaObjetivos(){
                 </div>
             </div>
             <div className='container-icmasa'>
-                <div class="fixed-grid has-1-cols-mobile">
+                <div className="fixed-grid has-1-cols-mobile">
                     <div className='grid'>
-                        <div class="cell box has-background-primary-20 block-objetivo-indvidual">
+                        <div className="cell box has-background-primary-20 block-objetivo-indvidual">
                             <div className='content' id="estrategicos">
                                 <p className='title is-4'>Objetivos Estratégicos</p>
                                 <p className='sutitle'>En un plazo de 10 años</p>
@@ -30,7 +30,7 @@ export default function PaginaObjetivos(){
                                 </dl>
                             </div>
                         </div>
-                        <div class=" cell box has-background-info-30 block-objetivo-indvidual">
+                        <div className=" cell box has-background-info-30 block-objetivo-indvidual">
                             <div className='content' id="operativos">
                                 <p className='title is-4'>Objetivos Operativos</p>
                                 <p>La garantía de cumplimiento de los objetivos operativos descansa, en gran medida, en la capacidad de los investigadores y la forma en que se organiza internamente el <strong>ICMASa</strong> para cada proyecto o iniciativa en particular.</p>
