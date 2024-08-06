@@ -8,7 +8,8 @@ body {
     background-attachment: fixed; /* Fija la imagen al fondo */
     /*background-color: hsl(0, 0%, 96%);*/
     color: hsl(0, 0%, 4%);
-    font-family: 'Monda', sans-serif !important
+    font-family: 'Monda', sans-serif !important;
+
 }
 
 
