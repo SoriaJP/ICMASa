@@ -17,6 +17,10 @@
     text-align: justify;
 }
 
+.full-width-content {
+    width: 100%;
+  }
+
 @media (max-width: 768px) {
     
     .margen-top {

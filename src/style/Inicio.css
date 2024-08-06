@@ -8,19 +8,25 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 1400px; /* Ancho deseado del contenedor */
     height: 590px; /* Alto deseado del contenedor */
     margin-left: 48px;
 }
 
 
-.inicio-container .box-custom-inicio {
+.box-custom-inicio {
     flex-direction: column;
     background-color: var(--box-background-color); 
-    width: 1000px;
-    margin-right: 900px;
+    width: 840px;
     padding: 20px;
 }
+
+@media(max-width:835px){
+    .box-custom-inicio {
+        max-width: 100%;
+        width: 600px;
+    }
+}
+
 
 @media((max-width: 768px)){
 

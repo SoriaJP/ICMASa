@@ -1,4 +1,5 @@
 @import 'bulma/css/bulma.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 
 body {
     background-image: url('../src/assets/icmasa.jpg'); /*pone de fondo una imagen*/
@@ -7,7 +8,8 @@ body {
     background-attachment: fixed; /* Fija la imagen al fondo */
     /*background-color: hsl(0, 0%, 96%);*/
     color: hsl(0, 0%, 4%);
-    font-family: 'Monda', sans-serif !important
+    font-family: 'Monda', sans-serif !important;
+
 }
 
 
