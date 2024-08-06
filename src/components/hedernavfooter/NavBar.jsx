@@ -30,7 +30,7 @@ export default function NavBar() {
   return (
     <nav className="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item has-background-light" href="/">
+        <a className="navbar-item has-background-light" href="/ICMASa">
           <p className="title is-5 has-text-dark"><strong>ICMASa</strong></p>
         </a>
         <a

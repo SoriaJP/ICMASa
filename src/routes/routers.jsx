@@ -12,7 +12,7 @@ const routers = createBrowserRouter([
         element: <Layout />,
         children: [
             {
-                path: "/ICMASa",
+                path: "/",
                 element: <PaginaInicio />,
             },
             {
