@@ -1,27 +1,51 @@
+import React, { useState } from 'react';
 import PublicationCard from "./componentespublicaciones/PublicationCard";
-import articulos from "../../assets/json/articulos.json";
+import autores from "../../assets/json/autores.json";
+import "../../style/publicaciones.css";
 
-export default function PaginaPublicaciones(){
-    return(
-        <div className="pagina">
-            <div className="container-icmasa">
-                <p className="title is-4 has-text-dark">Artículos</p>
-                <p className="subtitle has-text-dark">artículos publicados en revistas internacionales indexadas con revisión (jcr)</p> 
-            </div>
-            <div className=" container-icmasa card">
-                <header className="card-header">
-                    <p className="card-header-title">Card header</p>
-                    <button className="card-header-icon" aria-label="more options">
-                        <span className="icon">
-                            <i className="fas fa-angle-down" aria-hidden="false"></i>
-                        </span>   
-                    </button>
-                </header>
-            </div>
-        </div>        
-    );
+export default function PaginaPublicaciones() {
+  const [visibleId, setVisibleId] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleToggle = (id) => {
+    setVisibleId(visibleId === id ? null : id);
+  };
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  // Filtrar los autores según el término de búsqueda
+  const filteredAutores = autores.filter(autor =>
+    autor.autor.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  return (
+    <div className="pagina">
+      <div className="container-icmasa" style={{paddingBottom:"0px"}}>
+        <p className="title is-4 has-text-dark">Artículos</p>
+        <p className="subtitle has-text-dark">Artículos publicados en revistas internacionales indexadas con revisión (JCR)</p>
+        
+        {/* Campo de búsqueda */}
+        <div className="panel-block" style={{paddingLeft:"0px"}}>
+            <p className="control has-icons-left">
+            <input className="input content has-background-light has-text-dark" type="text" placeholder="Busqueda por autor" value={searchTerm} onChange={handleSearchChange}/>
+                <span className="icon is-left">
+                    <i className="fas fa-search has-text-dark" aria-hidden="true"></i>
+                </span>
+            </p>
+        </div>
+
+      </div>
+          {filteredAutores.map(autor => (
+
+                  <PublicationCard 
+                  key={autor.id} 
+                  autor={autor} 
+                  isVisible={visibleId === autor.id}
+                  onToggle={() => handleToggle(autor.id)}
+                  />
+          ))}
+    </div>
+  );
 }
-
-/*
-
-*/

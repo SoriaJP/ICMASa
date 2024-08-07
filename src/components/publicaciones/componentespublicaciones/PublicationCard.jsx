@@ -1,23 +1,41 @@
-export default function PublicationCard({articulo}){
-  return(
-    <div className="card has-background-info">
-      <header className="card-header">
-        <p className="card-header-title">{articulo.title}</p>
-        <button class="card-header-icon"  aria-label="more options">
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
+import React from 'react';
+import "../../../style/publicaciones.css";
+
+export default function PublicationCard({ autor, isVisible, onToggle }) {
+  return (
+    <div className="card cards-autor">
+      <header className="card-header is-flex is-justify-content-space-between is-align-items-center">
+        <div className="media">
+          <div className="media-left">
+            <figure className="image is-48x48">
+              <img
+                src={autor.img}
+                alt={autor.autor}
+              />
+            </figure>
+          </div>
+          <div className="media-content">
+            <br/>
+            <p className="title is-5">{autor.autor}</p>
+          </div>
+        </div>
+        <button 
+          className="card-header-icon" 
+          aria-label="more options" 
+          onClick={onToggle}
+        >
+          <span className="icon">
+            <i className={`fas fa-angle-${isVisible ? 'up' : 'down'}`} aria-hidden="true"></i>
           </span>
         </button>
       </header>
-      <div className="card-content">
-        <div className="content">
-          <p><strong>Author:</strong> {articulo.authors}</p>
-          <p><strong>Journal:</strong> {articulo.journal}</p>
-          <p><strong>Year:</strong> {articulo.date}</p>
-          <p>{articulo.info}</p>
-          <a href={articulo.url} target="_blank" rel="noopener noreferrer">Read more</a>
+      {isVisible && (
+        <div className="card-content">
+          <div className="content">
+            <p><strong>Publicaciones:</strong> <a href={autor.url} target="_blank" rel="noopener noreferrer">https://scholar.google.com/{autor.autor}</a></p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

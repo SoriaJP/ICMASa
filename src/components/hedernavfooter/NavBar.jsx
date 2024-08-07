@@ -105,6 +105,13 @@ export default function NavBar() {
               </HashLink>
             </div>
           </div>
+          <Link
+            to="/publicaciones"
+            className={`navbar-item ${location.pathname === '/publicaciones' ? 'has-text-link' : ''}`}
+            onClick={() => setActiveSubmenu(null)}
+          >
+            <strong>Publicaciones</strong>
+          </Link>
         </div>
       </div>
     </nav>
