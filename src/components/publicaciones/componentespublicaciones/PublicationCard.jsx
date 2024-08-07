@@ -3,7 +3,7 @@ import "../../../style/publicaciones.css";
 
 export default function PublicationCard({ autor, isVisible, onToggle }) {
   return (
-    <div className="card cards-autor">
+    <div className="card cards-autor has-background-info-dark has-text-light">
       <header className="card-header is-flex is-justify-content-space-between is-align-items-center">
         <div className="media">
           <div className="media-left">
@@ -25,7 +25,7 @@ export default function PublicationCard({ autor, isVisible, onToggle }) {
           onClick={onToggle}
         >
           <span className="icon">
-            <i className={`fas fa-angle-${isVisible ? 'up' : 'down'}`} aria-hidden="true"></i>
+            <i className={`has-text-ligth fas fa-angle-${isVisible ? 'up' : 'down'}`} aria-hidden="true"></i>
           </span>
         </button>
       </header>

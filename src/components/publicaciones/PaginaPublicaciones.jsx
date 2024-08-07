@@ -35,17 +35,21 @@ export default function PaginaPublicaciones() {
                 </span>
             </p>
         </div>
-
       </div>
-          {filteredAutores.map(autor => (
-
-                  <PublicationCard 
-                  key={autor.id} 
-                  autor={autor} 
-                  isVisible={visibleId === autor.id}
-                  onToggle={() => handleToggle(autor.id)}
-                  />
-          ))}
+      <div className='fixed-grid has-3-cols has-1-cols-mobile has-2-cols-tablet'>
+        <div className='grid'> 
+        {filteredAutores.map(autor => (
+        <div className='cell'>
+          <PublicationCard 
+                key={autor.id} 
+                autor={autor} 
+                isVisible={visibleId === autor.id}
+                onToggle={() => handleToggle(autor.id)}
+          />    
+        </div>
+            ))}
+        </div>
+      </div>
     </div>
   );
 }
