@@ -35,6 +35,15 @@ body.no-scroll {
     padding-bottom: 48px;
 }
 
+.cards-autor {
+    display: flex;
+    /*max-width: 45%;*/
+    flex-direction: column;
+    align-items: left;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
 @media (max-width: 1200px) {
     body {
         background-image: url('../src/assets/icmasaII.png');

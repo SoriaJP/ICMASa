@@ -1,0 +1,9 @@
+/*.panel-block {
+    max-width: 48% !important;
+}*/
+
+.input::placeholder{
+    color: rgb(1, 14, 10) !important;
+    opacity: 0.8 !important;
+}
+

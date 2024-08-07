@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "autor": "Carlos Berejnoi",
+        "url": "https://scholar.google.com/citations?user=p9wTwoAAAAAJ&hl=es&oi=sra",
+        "img": "https://scholar.google.com/citations/images/avatar_scholar_128.png"
+    },
+    {
+        "id": 2,
+        "autor": "Facundo Javier Bellomo",
+        "url": "https://scholar.google.com/citations?user=jGSfLHwAAAAJ&hl=es",
+        "img": "https://scholar.google.com/citations/images/avatar_scholar_128.png"
+    },
+    {
+        "id": 3,
+        "autor": "Felipe Biella Calvet",
+        "url": "https://scholar.google.com/citations?hl=es&user=qLm_G_MAAAAJ",
+        "img": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=qLm_G_MAAAAJ&citpid=1"
+    },
+    {
+        "id": 4,
+        "autor": "Liz G. Nallim",
+        "url": "https://scholar.google.com/citations?user=X04kZHwAAAAJ&hl=es&oi=ao",
+        "img": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=X04kZHwAAAAJ&citpid=2"
+    },
+    {
+        "id": 5,
+        "autor": "Mario Toledo",
+        "url": "https://scholar.google.com/citations?hl=es&user=e-yjHn_8stwC",
+        "img": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=e-yjHn_8stwC&citpid=3"
+    },
+    {
+        "id": 6,
+        "autor": "María Virginia Quintana",
+        "url": "https://scholar.google.com/citations?hl=es&user=FOCoNI8AAAAJ&view_op=list_works&sortby=pubdate",
+        "img": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=FOCoNI8AAAAJ&citpid=1"
+    },
+    {
+        "id": 7,
+        "autor": "Nilsa María Sarmiento Barbieri",
+        "url": "https://scholar.google.com/citations?hl=es&user=5-pm3IgAAAAJ",
+        "img": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=5-pm3IgAAAAJ&citpid=2"
+    },
+    {
+        "id": 8,
+        "autor": "Paul. H Kohan",
+        "url": "https://scholar.google.com/citations?user=_z60IU4AAAAJ&hl=es",
+        "img": "https://scholar.google.com/citations/images/avatar_scholar_128.png"
+    },
+    {
+        "id": 9,
+        "autor": "Ricardo D. Quinteros",
+        "url": "https://scholar.google.com/citations?user=-1NrBWQAAAAJ&hl=es",
+        "img": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=-1NrBWQAAAAJ&citpid=1"
+    },
+    {
+        "id": 10,
+        "autor": "Sergio Oller",
+        "url": "https://scholar.google.com/citations?user=dykQ-RkAAAAJ&hl=es",
+        "img": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=dykQ-RkAAAAJ&citpid=2"
+    },
+    {
+        "id": 11,
+        "autor": "Silvina Echazu Lamas",
+        "url": "https://scholar.google.com/citations?hl=es&user=WeKKZwIAAAAJ",
+        "img": "https://scholar.google.com/citations/images/avatar_scholar_128.png"
+    }
+]
