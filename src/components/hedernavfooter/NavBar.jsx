@@ -30,7 +30,7 @@ export default function NavBar() {
   return (
     <nav className="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item has-background-light" href="/ICMASa">
+        <a className="navbar-item has-background-light" href="/ICMASa/">
           <p className="title is-5 has-text-dark"><strong>ICMASa</strong></p>
         </a>
         <a
@@ -105,6 +105,36 @@ export default function NavBar() {
               </HashLink>
             </div>
           </div>
+
+          <div className={`navbar-item has-dropdown is-hoverable ${activeSubmenu === 'recursoshumanos' ? 'is-active' : ''}`}>
+            <a
+              className={`navbar-item navbar-item-custom ${isActive('#tesisfinalizadas') || isActive('#invconicet') || isActive('#tesistas') ? 'has-text-link' : ''}`}
+              onClick={() => toggleSubmenu('recursoshumanos')}
+            >
+              <strong>Recursos Humanos</strong>
+            </a>
+            <div className={`navbar-dropdown is-right ${activeSubmenu === 'recursoshumanos' ? 'is-active' : ''}`}>
+              <HashLink
+                to="/recursoshumanos#tesisfinalizadas"
+                className={`navbar-item navbar-item-custom ${isActive('#tesisfinalizadas')}`}
+              >
+                <strong>Tesis doctorales finalizadas</strong>
+              </HashLink>
+              <HashLink
+                to="/recursoshumanos#invconicet"
+                className={`navbar-item navbar-item-custom ${isActive('#invconicet')}`}
+              >
+                <strong>Investigadores de CONICET</strong>
+              </HashLink>
+              <HashLink
+                to="/recursoshumanos#tesistas"
+                className={`navbar-item navbar-item-custom ${isActive('#tesistas')}`}
+              >
+                <strong>Tesis doctorales en ejecución</strong>
+              </HashLink>
+            </div>
+          </div>
+
           <Link
             to="/publicaciones"
             className={`navbar-item ${location.pathname === '/publicaciones' ? 'has-text-link' : ''}`}

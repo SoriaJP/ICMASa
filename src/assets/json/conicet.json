@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1c",
+        "investigador":"OLLER Sergio Horacio Cristobal",
+        "tema": "MODELOS CONSTITUTIVOS PARA SIMULAR EL COMPORTAMIENTO DE NUEVOS MATERIALES COMPUESTOS",
+        "categoria":"INVESTIGADOR PRINCIPAL"
+    },
+
+    { 
+        "id":"2c",
+        "investigador":"NALLIM Liz Graciela",
+        "tema":"MODELOS PARA ESTRUCTURAS DE MATERIAL COMPUESTO: aplicación a laminados, mampostería y compuestos reforzados con fibras",
+        "categoria":"INVESTIGADORA PRINCIPAL"
+    },
+
+    {
+        "id":"3c",
+        "investigador":"OLLER ARAMAYO Sergio Alejandro",
+        "tema":"TURBINAS EÓLICAS NO CONVENCIONALES PARA FLUJOS DE BAJA DENSIDAD Y TURBINAS HIDROCINÉTICAS PARA FLUJOS NO CONFINADOS: GENERACIÓN ENERGÉTICA SUSTENTABLE// DISPOSITIVOS NO CONVENCIONALES DE VENTILACIÓN MECÁNICA ASISTIDA (RESPIRACIÓN ARTIFICIAL)",
+        "categoria":"INVESTIGADOR ASISTENTE"
+    },
+
+    {
+        "id":"4c",
+        "investigador":"SARMIENTO BARBIERI Nilsa Maria",
+        "tema":"OPTIMIZACIÓN DE LA PLANIFICACIÓN ENERGÉTICA REGIONAL PARA UN MEJOR APROVECHAMIENTO DE LAS ENERGÍAS RENOVABLES",
+        "categoria":"INVESTIGADORA ASISTENTE"
+    }
+]

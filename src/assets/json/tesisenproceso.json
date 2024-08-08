@@ -1,0 +1,37 @@
+[
+    {
+        "id":"1tp",
+        "tesista": "Ing. Álvaro Ismael Ruiz",
+        "titulo": "Desarrollo de modelos para el análisis de estructuras pos-tesadas conformadas por bloques de hormigón",
+        "director": "Dr. Sergio Horacio Oller Martinez",
+        "codirector": "Dra. Ing. Liz Graciela Nallim"
+    },
+    {
+        "id":"2tp",
+        "tesista": "Ing. Ezequiel Domingo Sánchez",
+        "titulo": "Desarrollo de modelos para estructuras de madera laminada cruzada (CLT) reconstituida",
+        "director": "Dr. Facundo Javier Bellomo",
+        "codirector": "Dra. Ing. Liz Graciela Nallim"
+    },
+    {
+        "id":"3tp",
+        "tesista": "Ing. Guillermo Miguel López",
+        "titulo": "Desarrollo de materiales compuestos para construcción civil, funcionalizados con fibras naturales y desechos de la agroindustria",
+        "director": "Dra. María Alejandra Bertuzzi",
+        "codirector": "Dr. Facundo Javier Bellomo"
+    },
+    {
+        "id":"4tp",
+        "tesista": "Mag. Ing. Paul Hernán Kohan",
+        "titulo": "Evaluación dinámica del daño estructural",
+        "director": "Dra. Liz G. Nallim",
+        "codirector": "Dr. Sergio Oller Martinez"
+    },
+    {
+        "id":"5tp",
+        "tesista": "Lic. Juan Pablo Soria",
+        "titulo": "Optimización de la planificación energética regional para un mejor aprovechamiento de las energías renovables",
+        "director": "Dra. Nilsa M. Sarmiento Barbieri",
+        "codirector": ""
+    }
+]
