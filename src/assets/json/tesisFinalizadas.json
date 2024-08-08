@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "tesista": "Carlos Albarracín",
+        "titulo": "Dinámica de elementos estructurales: soluciones clásicas y débiles",
+        "defensa": "01-03-2006",
+        "universidad": "Universidad Nacional de Salta",
+        "facultad": "Facultad de Ingeniería",
+        "directores": "Ricardo Oscar Grossi"
+    },
+    {
+        "id": 2,
+        "tesista": "Felipe Biella Calvet",
+        "titulo": "Modelo para la Construcción de Viviendas Autofinanciadas a partir de la Etapabilización",
+        "defensa": "13-12-2019",
+        "universidad": "Universidad Nacional de Salta",
+        "facultad": "Facultad de Ingeniería",
+        "directores": "Jorge A. Paz - Liz G. Nallim"
+    },
+    {
+        "id": 3,
+        "tesista": "Facundo Javier Bellomo",
+        "titulo": "Simulación Numérica del Comportamiento Mecánico en-vivo de Tejidos Biológicos Blandos",
+        "defensa": "01-03-2012",
+        "universidad": "Universidad Nacional de Salta",
+        "facultad": "Facultad de Ingeniería",
+        "directores": "Sergio Oller - Liz G. Nallim"
+    },
+    {
+        "id": 4,
+        "tesista": "Liz Graciela Nallim",
+        "titulo": "Mecánica de Placas Anisótropas: Un Enfoque Variacional",
+        "defensa": "11-04-2003",
+        "universidad": "Universidad Nacional de Salta",
+        "facultad": "Facultad de Ingeniería",
+        "directores": "Ricardo Grossi - Sergio Oller"
+    },
+    {
+        "id": 5,
+        "tesista": "María Virginia Quintana",
+        "titulo": "Análisis dinámico de vigas y placas con rótulas: Estudio Analítico-Numérico",
+        "defensa": "01-03-2012",
+        "universidad": "Universidad Nacional de Salta",
+        "facultad": "Facultad de Ingeniería",
+        "directores": "Ricardo O. Grossi - Liz G. Nallim"
+    },
+    {
+        "id": 6,
+        "tesista": "Rita Fernanda Rango",
+        "titulo": "Modelo analítico numérico para el estudio y optimización de placas gruesas laminadas",
+        "defensa": "01-03-2013",
+        "universidad": "Universidad Nacional de Salta",
+        "facultad": "Facultad de Ingeniería",
+        "directores": "Liz G. Nallim - Sergio Oller"
+    },
+    {
+        "id": 7,
+        "tesista": "Ricardo Daniel Quinteros",
+        "titulo": "Modelización del comportamiento de estructuras de mampostería mediante la teoría de homogeneización",
+        "defensa": "01-03-2014",
+        "universidad": "Universidad Nacional de Salta",
+        "facultad": "Facultad de Ingeniería",
+        "directores": "Liz G. Nallim - Sergio Oller"
+    },
+    {
+        "id": 8,
+        "tesista": "Sergio A. Oller Aramayo",
+        "titulo": "Generación eléctrica hidrofluvial: Implantación de turbinas subacuáticas en lechos fluviales",
+        "defensa": "01-03-2014",
+        "universidad": "Universidad Nacional de Salta",
+        "facultad": "Facultad de Ingeniería",
+        "directores": "Allen Bateman - Liz G. Nallim"
+    },
+    {
+        "id": 9,
+        "tesista": "Silvina Emilce Echazú Lamas",
+        "titulo": "Evaluación empírica-analítica de la estabilidad de un sector de la ladera occidental del cerro San Bernardo, constituido por lutitas meteorizadas, considerando el factor climático",
+        "defensa": "01-05-2017",
+        "universidad": "Universidad Nacional de Salta",
+        "facultad": "Facultad de Ingeniería",
+        "directores": "Dra. Lía Orosco"
+    }
+]
