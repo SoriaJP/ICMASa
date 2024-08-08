@@ -7,6 +7,7 @@ import PaginaObjetivos from "../components/objetivos/PaginaObjetivos.jsx";
 import PaginaVisionMision from "../components/visionmision/PaginaVisionMision.jsx";
 import PaginaPublicaciones from "../components/publicaciones/PaginaPublicaciones.jsx";
 import PaginaRecHumano from "../components/recursoshumanos/PaginaRecHumano.jsx";
+import PaginaLaboratorio from "../components/laboratorio/PaginaLaboratorio.jsx";
 
 const routers = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const routers = createBrowserRouter([
             {
                 path: "publicaciones",
                 element: <PaginaPublicaciones />
+            },
+            {
+                path: "laboratorios",
+                element: <PaginaLaboratorio />
             },
         ],
     },

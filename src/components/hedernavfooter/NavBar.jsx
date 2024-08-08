@@ -142,6 +142,14 @@ export default function NavBar() {
           >
             <strong>Publicaciones</strong>
           </Link>
+
+          <Link
+            to="/laboratorios"
+            className={`navbar-item ${location.pathname === '/laboratorios' ? 'has-text-link' : ''}`}
+            onClick={() => setActiveSubmenu(null)}
+          >
+            <strong>Laboratorios</strong>
+          </Link>
         </div>
       </div>
     </nav>
