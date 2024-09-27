@@ -15,7 +15,7 @@ function PaginaInstitucion() {
     <div className='pagina'>
           <CabeceraInst />
           <CargoPrincipal />
-          {size.width < 800 ? <AccionesConsejoGobMobile /> : < AccionesConsejoGobModal />}
+          {size.width < 800 ? <AccionesConsejoGobMobile /> : <AccionesConsejoGobModal />}
     </div>
   );
 }

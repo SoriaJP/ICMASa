@@ -8,6 +8,13 @@
     -webkit-user-select: none;
 }
 
+.mobile-card-body-display {
+    display: block !important;
+}
+
+.mobile-card-body-undisplay {
+    display: none !important;
+}
 
 .modal-card-body strong{
     color:black !important;
