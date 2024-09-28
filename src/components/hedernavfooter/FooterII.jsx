@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../style/hedernavfooter.css';
-import unsa from '../../assets/unsa.png';
+import unsa from '../../assets/unsaII.png';
 import cimne from '../../assets/cimneiber-1.png';
 import ingenieria from '../../assets/Ingenieria.png';
 
@@ -13,56 +13,8 @@ export default function FooterII(){
             </div> 
             <div className="columns"> 
                 {/*<!-- Column 1 -->*/}
-                <div className="column"> 
-                    {/*<!-- Heading is left aligned, medium weight -->*/}
-                    <h4 className="bd-footer-title  
-                    has-text-weight-medium 
-                    has-text-left"> 
-                        <p><strong>Dirección</strong></p>
-                    </h4> 
-                        {/*<!-- footer content -->*/}
-                    <p className="bd-footer-link  has-text-left has-text-info"> 
-                        Universidad Nacional de Salta
-                        <br />                            
-                        Facultad de Ingeniería
-                        <br />                            
-                        Av. Bolivia N° 5150
-                        <br />                            
-                        Salta (4400) – ARGENTINA
-                        <br />                           
-                        <strong>Teléfono</strong>
-                        <br />
-                        +54 387 4258616
-                    </p>
-                </div> 
-                {/*<!-- Column 2 -->*/}
-                <div className="column"> 
-                    <h4 className="bd-footer-title has-text-weight-medium has-text-justify"> 
-                        <p><strong>NavBar</strong></p>
-                    </h4> 
-                    <p className="bd-footer-link"> 
-                        <a href="https://"> 
-                            <span className="icon-text"> 
-                                <span>Practice</span> 
-                            </span> 
-                        </a> 
-                        <br /> 
-                        <a href="https://"> 
-                            <span className="icon-text"> 
-                                <span>Blogs</span> 
-                            </span> 
-                        </a> 
-                        <br /> 
-                        <a href="https://"> 
-                            <span className="icon-text"> 
-                                <span>Careers</span> 
-                            </span> 
-                        </a> 
-                    </p> 
-                </div> 
-                {/*<!-- Column 3 -->*/}
-                <div className="column"> 
-                    <h4 className="bd-footer-title has-text-weight-medium has-text-justify"> 
+                <div className="column">
+                <h4 className="bd-footer-title has-text-weight-medium has-text-justify"> 
                         <p className='has-tex-light'><strong>Enlaces</strong></p>
                     </h4> 
                     {/*<!-- Column 3 lists with links -->*/}
@@ -81,7 +33,31 @@ export default function FooterII(){
                             <a href="https://cimne-iber.com.ar/" target="_blank" rel="noopener noreferrer">
                                 <img src={cimne} alt="Cimne-Iber" />
                             </a>
-                        </figure>
+                        </figure> 
+                </div> 
+                {/*<!-- Column 2 -->*/}
+                <div className="column">
+                    {/*<!-- Heading is left aligned, medium weight -->*/}
+                    <h4 className="bd-footer-title  
+                    has-text-weight-medium 
+                    has-text-right has-text-left-mobile"> 
+                        <p><strong>Dirección</strong></p>
+                    </h4> 
+                        {/*<!-- footer content -->*/}
+                    <p className="bd-footer-link  has-text-right has-text-info has-text-left-mobile"> 
+                        Universidad Nacional de Salta
+                        <br />                            
+                        Facultad de Ingeniería
+                        <br />                            
+                        Av. Bolivia N° 5150
+                        <br />                            
+                        Salta (4400) – ARGENTINA
+                        <br />                           
+                        <br />
+                        <strong>Teléfono</strong>
+                        <br />
+                        +54 387 4258616
+                    </p> 
                 </div> 
             </div> 
             <div className="content has-text-centered"> 

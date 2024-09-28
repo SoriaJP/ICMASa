@@ -10,6 +10,12 @@
 
 .mobile-card-body-display {
     display: block !important;
+    font-size: 12px !important;
+    text-align: justify;
+}
+
+.mobile-card-body-display strong {
+    color: black !important;
 }
 
 .mobile-card-body-undisplay {

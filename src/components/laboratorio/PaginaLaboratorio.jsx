@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../../style/laboratorio.css";
 
 export default function PaginaLaboratorio() {
     const [activeTab, setActiveTab] = useState('basicas'); // Por defecto, "Áreas Básicas"
@@ -101,14 +102,14 @@ export default function PaginaLaboratorio() {
                     <div className="column">
                         <div className="fixed-grid has-1-cols-desktop has-1-cols-mobile has-1-cols-tablet has-1-cols-fullhd has-1-cols-widescreen">
                             <div className="grid">
-                                <table className="table table is-hoverable is-fullwidth has-background-primary-20">
+                                <table className="table is-fullwidth has-background-primary-20">
                                     <thead>
                                         <tr>
                                             <th><abbr title="Laboratorio">Laboratorio</abbr></th>
                                             <th><abbr title="Coordinador">Coordinador</abbr></th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody className='mitabla'>
                                         {renderTableContent()}
                                     </tbody>
                                 </table>

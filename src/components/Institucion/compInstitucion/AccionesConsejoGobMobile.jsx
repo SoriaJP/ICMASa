@@ -1,10 +1,24 @@
 import { useState } from "react";
+import ReactMarkdown from 'react-markdown';
 import '../../../style/institucion.css';
 import '../../../style/Inicio.css';
 import data from '../../../assets/json/actividadesgobierno.json';
 
 export default function AccionesConsejoGobMobile() {
     const [visibleContent, setVisibleContent] = useState(null);
+
+    const markdownText = `
+    # React Markdown Example
+    
+    - Some text
+    - Some other text
+    
+    ## Subtitle
+    
+    ### Additional info
+    
+    This is a [link](https://github.com/remarkjs/react-markdown)
+    `;
 
     const handleClick = (id) => {
         if (visibleContent === id) {
@@ -32,7 +46,7 @@ export default function AccionesConsejoGobMobile() {
                         id={`content${item.id}`}
                         style={{ marginTop: "-25px", marginBottom: "30px"}}
                     >
-                        {item.contenido}
+                        <ReactMarkdown children={item.contenido} />
                     </div>
                 </div>
             ))}

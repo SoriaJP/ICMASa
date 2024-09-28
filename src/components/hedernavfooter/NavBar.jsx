@@ -23,6 +23,12 @@ export default function NavBar() {
 
   const isActive = (hash) => location.hash === hash ? 'has-text-link' : '';
 
+  // Función para cerrar el menú y submenús
+  const closeMenu = () => {
+    setIsNavbarActive(false);
+    setActiveSubmenu(null); // Restablecer submenús
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top on location change
   }, [location]);
@@ -59,12 +65,14 @@ export default function NavBar() {
               <HashLink
                 to="/institucion#section-organizacion"
                 className={`navbar-item navbar-item-custom ${isActive('#section-organizacion')}`}
+                onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
               >
                 <strong>Autoridades</strong>
               </HashLink>
               <HashLink
                 to="/institucion#section-actividades"
                 className={`navbar-item navbar-item-custom ${isActive('#section-actividades')}`}
+                onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
               >
                 <strong>Actividades a seguir</strong>
               </HashLink>
@@ -73,7 +81,7 @@ export default function NavBar() {
           <Link
             to="/vision_mision"
             className={`navbar-item ${location.pathname === '/vision_mision' ? 'has-text-link' : ''}`}
-            onClick={() => setActiveSubmenu(null)}
+            onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
           >
             <strong>Visión y Misiones</strong>
           </Link>
@@ -88,18 +96,21 @@ export default function NavBar() {
               <HashLink
                 to="/objetivos#estrategicos"
                 className={`navbar-item navbar-item-custom ${isActive('#estrategicos')}`}
+                onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
               >
                 <strong>Objetivos estratégicos</strong>
               </HashLink>
               <HashLink
                 to="/objetivos#operativos"
                 className={`navbar-item navbar-item-custom ${isActive('#operativos')}`}
+                onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
               >
                 <strong>Objetivos operativos</strong>
               </HashLink>
               <HashLink
                 to="/objetivos#acciones"
                 className={`navbar-item navbar-item-custom ${isActive('#acciones')}`}
+                onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
               >
                 <strong>Acciones</strong>
               </HashLink>
@@ -117,18 +128,21 @@ export default function NavBar() {
               <HashLink
                 to="/recursoshumanos#tesisfinalizadas"
                 className={`navbar-item navbar-item-custom ${isActive('#tesisfinalizadas')}`}
+                onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
               >
                 <strong>Tesis doctorales finalizadas</strong>
               </HashLink>
               <HashLink
                 to="/recursoshumanos#invconicet"
                 className={`navbar-item navbar-item-custom ${isActive('#invconicet')}`}
+                onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
               >
                 <strong>Investigadores de CONICET</strong>
               </HashLink>
               <HashLink
                 to="/recursoshumanos#tesistas"
                 className={`navbar-item navbar-item-custom ${isActive('#tesistas')}`}
+                onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
               >
                 <strong>Tesis doctorales en ejecución</strong>
               </HashLink>
@@ -138,7 +152,7 @@ export default function NavBar() {
           <Link
             to="/publicaciones"
             className={`navbar-item ${location.pathname === '/publicaciones' ? 'has-text-link' : ''}`}
-            onClick={() => setActiveSubmenu(null)}
+            onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
           >
             <strong>Publicaciones</strong>
           </Link>
@@ -146,7 +160,7 @@ export default function NavBar() {
           <Link
             to="/laboratorios"
             className={`navbar-item ${location.pathname === '/laboratorios' ? 'has-text-link' : ''}`}
-            onClick={() => setActiveSubmenu(null)}
+            onClick={closeMenu} // Cerrar el menú al seleccionar un enlace
           >
             <strong>Laboratorios</strong>
           </Link>
