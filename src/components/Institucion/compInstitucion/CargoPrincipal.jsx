@@ -61,6 +61,44 @@ export default function CargoPrincipal(){
                         </div>
                     </div>
                 </div>
+                <p className="title is-4 has-text-dark" style={{marginTop:"20px"}}>Auxiliares de investigación y becarios</p>
+                <div className="fixed-grid has-1-cols-mobile">
+                    <div className='grid'>
+                        <div className="cell box has-background-info-dark block-objetivo-indvidual">
+                            <div className='content full-width-content'>
+                                <p className='title is-4'style={{textAlign:"center"}}>Miembros titulares</p>
+                                <hr style={{color:"white"}}/>
+                                <p className= {titleClass}>{miembros["consejogob"]["representantes"]["auxiliares"]["titular"]}</p>
+                            </div>
+                        </div>
+                        <div className=" cell box has-background-info-dark block-objetivo-indvidual">
+                            <div className='content full-width-content'>
+                                <p className='title is-4'style={{textAlign:"center"}}>Miembros suplentes</p>
+                                <hr style={{color:"white"}}/>
+                                <p className= {titleClass}>{miembros["consejogob"]["representantes"]["auxiliares"]["suplente"]}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p className="title is-4 has-text-dark" style={{marginTop:"20px"}}>Representantes del personal técnico de apoyo a la investigación</p>
+                <div className="fixed-grid has-1-cols-mobile">
+                    <div className='grid'>
+                        <div className="cell box has-background-primary-20 block-objetivo-indvidual">
+                            <div className='content full-width-content'>
+                                <p className='title is-4'style={{textAlign:"center"}}>Miembros titulares</p>
+                                <hr/>
+                                <p className= {titleClass}>{miembros["consejogob"]["representantes"]["personaltecnico"]["titular"]}</p>
+                            </div>
+                        </div>
+                        <div className=" cell box has-background-primary-20 block-objetivo-indvidual">
+                            <div className='content full-width-content'>
+                                <p className='title is-4'style={{textAlign:"center"}}>Miembros suplentes</p>
+                                <hr/>
+                                <p className= {titleClass}>{miembros["consejogob"]["representantes"]["personaltecnico"]["suplente"]}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     );
 }

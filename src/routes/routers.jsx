@@ -45,7 +45,7 @@ const routers = createBrowserRouter([
     },
 ],
 {
-    basename: "/ICMASa/",
+    basename: "/",
 }
     
 );

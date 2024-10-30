@@ -1,28 +1,30 @@
 {
-    "presidente":"Dr. Sergio H. Oller",
-    "vicepresidente":"Dra. Lía Orosco",
-    "secretario":"Mag. Mario Toledo",
+    "presidente":"Dr. Ing. Sergio Horacio Cristóbal OLLER",
+    "vicepresidente":"Dra. Ing. Liz Graciela NALLIM",
+    "secretario":"Mag. Ing. Mario Walter Efraín TOLEDO",
     "consejogob":{
         "miembrostitulares":{
-            "miembro1":"Dr. Sergio H. Oller",
-            "miembro2":"Dr. Facundo Bellomo",
-            "miembro3":"Dr. Sergio Oller Aramayo",
-            "miembro4":"Mag. Mario Toledo"
+            "miembro1":"Dr. Ing. Sergio Horacio Cristóbal OLLER",
+            "miembro2":"Dra. Ing. Liz Graciela NALLIM",
+            "miembro3":"Dr. Ing. Sergio Alejandro OLLER ARAMAYO",
+            "miembro4":"Mag. Ing. Mario Walter Efraín TOLEDO"
         },
         "miembrossuplentes":{
-            "miembro1":"Dra. Lía Orosco",
-            "miembro2":"Dr. Ricardo Quinteros",
-            "miembro3":"Mag. Paul Kohan",
-            "miembro4":"Mag. Felipe Biella"
+            "miembro1":"Dra. Ing. Lía Elizabet OROSCO SEGURA",
+            "miembro2":"Ing. Eduardo Daniel PALÓPOLI",
+            "miembro3":"Mag. Ing. Paul Hernán KOHAN",
+            "miembro4":"Dr. Ing. Facundo Javier BELLOMO",
+            "miembro5":"Ing. Fernando Issac CAZÓN NARVÁEZ",
+            "miembro6":"Dr. Mag. Ing. Felipe Guillermo BIELLA CALVET"
         },
         "representantes":{
             "auxiliares":{
-                "titular":"Ing. Ezequiel Sánchez",
-                "suplente":" Ing. Lucas Burgos"
+                "titular":"Ing. Álvaro Ismael RUIZ",
+                "suplente":"Ing. Ezequiel Domingo SÁNCHEZ"
             },
             "personaltecnico":{
-                "titular":"Ing. Fernando Cazón",
-                "suplente":"Sr. Oscar Recalde"
+                "titular":"Sr. Oscar Neri RECALDE",
+                "suplente":"Sr. Diego Leonardo CHAVARRÍA"
             }
         }
     }
